@@ -15,7 +15,7 @@ header, footer {
 
 header h1 {
     /* Add margin to the top and bottom of the heading */
-    margin: 0.5em 0;
+    margin: 2em 2em;
     font-style: italic;
 }
 
@@ -78,6 +78,7 @@ img {
     background-size: cover;
 
     /* add 50% opacity to the background image */
+    opacity: 50%;
 }
 
 .product {
@@ -101,7 +102,7 @@ button {
     margin-top: 10px;
     cursor: pointer;
 }
-
+/* TO DO, This media querry increases the size of the product display and mobile menu navbar when the min width of 768px gets crossed. */
 @media screen and (min-width: 768px) {
     .products {
         padding: 40px;
@@ -123,7 +124,7 @@ button {
         display: block;
     }
 }
-
+/* TO DO, This media querry gets triggered when the screen size is landcape. */
 @media (orientation: landscape) {
     body {
         background-color: #ac8a04;
