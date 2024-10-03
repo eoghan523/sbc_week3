@@ -20,6 +20,50 @@ body {
     height: 100vh;
     gap: 10px;
 }
+@media all and (max-width: 760px) {
+    .dashboard-container {
+        height: 100vh;
+        flex-direction: column;
+        width: 100%;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+        "header"
+        "header"
+        "sidebar"
+        "main";
+     }
+    }
+
+@media all and (max-width: 760px) {
+    .dashboard-container {
+        height: 100vh;
+        flex-direction: column;
+        width: 100%;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+        "header"
+        "header"
+        "sidebar"
+        "main";
+     }
+    }
+
+    @media all and (max-width: 480px) {
+        .dashboard-container {
+            height: 100vh;
+            flex-direction: column;
+            width: 100%;
+            grid-template-columns: 1fr ;
+            grid-template-areas: 
+            "header"
+            "header"
+            "sidebar"
+            "main";
+         }
+        }
+
+
+
 /* The grid-template-area is the page layout. If you delete any of the elements you will change the layout completely */
 
 
@@ -120,3 +164,4 @@ body {
 .complete-btn:hover {
     background-color: #45a049;
 }
+
