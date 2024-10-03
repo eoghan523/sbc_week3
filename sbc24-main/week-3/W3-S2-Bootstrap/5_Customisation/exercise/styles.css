@@ -8,9 +8,17 @@ header {
     /* Gold */
 }
 
+header, h1 { color: rgb(229, 168, 168);
+    font-size: 60px;
+    
+}
+
+.bg-secondary {
+    background-color: #987575;
+}
 /* Footer Custom Colors */
 footer {
-    background-color: #2E8B57 !important;
+    background-color: #39fe92 !important;
     /* SeaGreen */
     color: #FFFFFF !important;
     /* White */
@@ -18,15 +26,17 @@ footer {
 
 /* Button Custom Colors */
 .btn-primary {
-    background-color: #FF4500 !important;
+    background-color: #de9f88 !important;
     /* OrangeRed */
-    border-color: #FF4500 !important;
+    border-color: #050201 !important;
+    font-size: 16px;
 }
 
 .btn-secondary {
-    background-color: #6A5ACD !important;
+    background-color: #36af87 !important;
     /* SlateBlue */
     border-color: #6A5ACD !important;
+    font-size: 15px;
 }
 
 .btn-danger {
@@ -42,6 +52,6 @@ footer {
 }
 
 .text-dark {
-    color: rgb(188, 215, 55) !important;
+    color: rgb(1, 1, 1) !important;
     /* Black */
 }
