@@ -7,6 +7,7 @@
     <title>jQuery CSS Manipulation</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- TODO: Add in the jQuery script  -->>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -32,6 +33,10 @@
         <p class="text-element">Text 4</p>
         <button class="btn">Italicize Text</button>
     </div>
+    <div class="box" id="box5">
+        <p class="text-element">Text 5</p>
+        <button class="btn">Click</button>
+    </div>
 
     <script>
         $(document).ready(function () {
@@ -39,12 +44,34 @@
             $('#box1').click(function () {
                 $('#box1').css('color', 'red');
             });
+        // TODO: Increase font size for the second box
+            $('#box2').click(function () {
+                $('#box2').css('font-size', '50px');
+            });
 
-            // TODO: Increase font size for the second box
+            
 
             // TODO: Change background color for the third box
-
+            $('#box3').click(function () {
+                $('#box3').css('background-color', 'aqua');
+            });
             // TODO: Italicize text for all the text elements
+            $('#box4').click(function () {
+                $('p').css('text-style', 'italic');
+            });
+
+            $('#box5').click(function () {
+                $GetJSON(https://api.ipify.org?format-json', function (data))
+                $(#ipBox).text(data.ip);
+                $('#ipBox').show();
+            });.fail(function () {
+                alert('something wen twrong');
+            });
+
+            });
+
+
+
 
         });
     </script>

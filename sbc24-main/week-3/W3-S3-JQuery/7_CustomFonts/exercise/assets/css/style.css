@@ -1,3 +1,9 @@
+/* CSS Variables */
+:root {
+    --Primary-font: 'roboto mono', sans-serif;
+    --Header-font: "Libre Barcode 39", system-ui;
+
+
 /* General Styles */
 body {
     margin: 20px;
@@ -11,7 +17,7 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: var(--Header-font);
 }
 
 /* Main Content Styles */
@@ -27,14 +33,17 @@ section {
     border: 1px solid #cccccc;
 }
 
+h1 { 
+    font-family: var(--Primary-font);
+}
 h2 {
-    font-family: Verdana, sans-serif;
+    font-family: var(--Primary-font);
     color: #333333;
 }
 
 /* Paragraph Styles */
 p {
-    font-family: Arial, sans-serif;
+    font-family: var(--Primary-font);
     color: #333333;
     margin-bottom: 15px;
 }
