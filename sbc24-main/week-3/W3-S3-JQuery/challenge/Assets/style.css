@@ -1,0 +1,398 @@
+
+/* CCS Variables */
+:root {
+
+    --header-bg-clr: rgb(187, 187, 135);
+    --primary-clr: rgb(0, 0, 3);
+    --default-box-shadow: 3px 3px 5px rgba(0, 0, 0, .1);
+}
+
+
+/* General CSS styles */
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+.header-main {
+ background-color: var(--header-bg-clr);
+ #position:;
+ display: flex;
+ width: max-content;
+ height: 60px;
+ display: flex;
+ justify-content: space-evenly;
+ box-shadow: 3px 3px 5px rgba(0, 0, 0, .1);
+  
+ 
+}
+
+.header-heading {
+    display: flex;
+    font: size 20px;
+    justify-content: left;
+    padding: 10px;
+    
+
+}
+.header-main-logo {
+    width: fit-content;
+    height: 100%;
+    background-color: var(--header-bg-clr);
+    display:flex ;
+    border-radius: 4%;
+}
+
+.header-main-logo img {
+    width: 40px;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.header-main-logo img:hover {
+    transform: translate(3px, 3px)
+}
+
+
+.header-main-sm {
+    width: 60px;
+    height: 100%;
+    background-color: var(--header-bg-clr);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.header-main-sm img { 
+width: 20px;
+height:20px;
+border-radius: 40%;
+cursor: pointer;
+transform: scale(1.05);
+background-color: var(--header-bg-clr);
+}
+.header-main-sm img:hover {
+transform: translate(30px 30px);
+}
+.header-main-sm-github img {
+    background-image: url(https://github.com/eoghan523/clover-adventure);
+
+}
+.header-main-sm-github img:hover{
+    transform: translate(3px, 3px);
+}
+.header-main-sm-ig img:hover {
+    transform: translate(3px, 3px)
+
+} 
+
+.header-main-nav {
+    width: fit-content;
+    height: 100%;
+    background-color: var(--header-bg-clr);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .1); 
+    border-radius: 3%;
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+
+}
+
+.header-main-nav ul {
+    list-style: none;
+    margin-left: 30px;
+    display: flex;
+
+}
+
+.header-main-nav li {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+
+}
+   
+.header-main-nav a {
+    padding: 0 20px;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 60px;
+    color: var(--primary-clr);
+}
+
+.header-main-nav a:hover {
+    background-color:  aliceblue;
+}
+@media screen and (max-width: 760px )  {
+    .header-main-nav {
+        width: 100%;
+        flex-direction: column;
+        border: 100px;  
+    }
+    .header-main {
+        flex-direction: column;   
+    }
+    .header-main-sm {
+       background-color: transparent;
+        position:absolute;
+        margin-top:  240px;
+        margin-left: 300px ;  
+    }
+   
+    
+    /*on review for  the W3_S2 Challenge on my last week website. I would add the MEDIA QUERRY breakpoint at max-width 824px. The reason for this is the nav bar slightly overflows at this point. */
+}
+
+
+.index_body {
+
+min-height: 100vh;
+background-image: url("./Images/Sedona_view.JPG");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+overflow: auto;
+display: flex;
+}
+
+
+.gallery-containers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-bottom: 60px;
+    justify-content: space-around;
+}
+.gallery-containers p {
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container-box {
+    width: max-content;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    justify-content: center; 
+}
+
+.container-box:hover {
+   # transform: translate(30px, 30px);
+    transform: scale(1.70);
+
+
+}
+
+.container-box img  {
+width: 250px;
+height: 200px;
+border-radius: 3%;
+-webkit-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 12px 18px 81px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 29px 61px 0px rgba(0,0,0,0.75);
+
+
+
+}
+
+
+.footer {
+position:fixed ;
+padding: 5px;
+color: rgb(0, 0, 0);
+font-size: 20px;
+display: flex;
+bottom: 0px;
+justify-content: center;
+z-index: 10;
+}
+
+.copyright {
+    justify-content: center;
+    display: flexbox;
+    border-bottom: 0;
+    cursor: pointer;
+    background-color: #fab45eb1;
+}
+.copyright:hover {
+    transform:scale(1.10);
+    color: blue;
+}
+.copyright:visited {
+    background: url(#);
+}
+
+
+    
+
+.gallery-body {
+    background-color: #fab45eb1;
+
+}
+
+.about-body {
+    
+min-height: 100vh;
+
+background-image: url("./Images/Jerome.JPG");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+overflow: scroll;
+display: flex;
+flex-grow: 1;
+flex-shrink: 1;
+flex-direction: column;
+text-align: center;
+margin-bottom: 10px;
+padding: 10px;
+}
+
+.flex-containers {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+    padding:60px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 60px;
+    border: 10px 10px 10px solid color(srgb rgb(0, 0, 0) rgb(0, 0, 0) blue);
+}
+
+
+
+    
+    
+}
+.about-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 300px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 2.5%;
+    border: 2px 2px solid color(srgb rgb(0, 0, 0) rgb(0, 0, 0) blue)
+    
+}
+.about-text h2, h3, h4 {
+    font-size: 40px;
+    padding: 10px;
+    margin-top: 12px;
+    background-color: antiquewhite;
+    border-radius: 15%;
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: min-content;
+    margin: 10px;
+    border: 2px 2px solid color(srgb rgb(0, 0, 0) rgb(0, 0, 0) blue)
+}
+.about-text p {
+    border: solid;
+    border-radius: 10%;
+    background-color: antiquewhite;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    justify-content: space-evenly;
+
+}
+
+
+.contact-body {
+    display: inline-flex;
+    text-align: left;
+    flex-direction: column;
+    background-color: antiquewhite;
+    padding: 10px;
+    margin:10px;
+    width: 100%;
+}
+
+.contact-container {
+    display: table-row;
+    text-align: left;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    padding: 12px;
+    border: 2px 2px 2px solid;
+    color: rgb(0, 4, 5);
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 2.5%;
+    
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    resize: vertical;
+}
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 5px; 
+    margin-bottom: 16px; 
+    resize: horizontal;
+}
+
+input[type=submit] {
+    background-color: gold;
+    font-size: large;
+    font-weight: 200;
+    padding: 3px;
+    display: flex;
+    border-radius: 2.5%;
+    border: none;
+}
+input[type=submit]:hover {
+    transform: translate(10px, 10px);
+    color: blue;  
+}
+
+.fname::after {
+    content: "😊";
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.lname::after {
+    content: "🕵️‍♂️";
+    padding: 12px;
+    cursor: pointer;
+}
+.email::after {
+    content: "📬";
+    padding: 12px;
+    cursor: pointer;
+}
+.phone::after {
+    content: "📲";
+    padding: 12px;
+    cursor: pointer;
+}
+
+.subject::after {
+    content: "📷";
+    padding: 12px;
+    cursor: pointer;
+    
+
+}
