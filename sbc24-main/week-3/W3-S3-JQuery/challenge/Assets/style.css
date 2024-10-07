@@ -14,34 +14,9 @@
     padding: 0;
 }
 
-.header-main {
- background-color: var(--header-bg-clr);
- #position:;
- display: flex;
- width: max-content;
- height: 60px;
- display: flex;
- justify-content: space-evenly;
- box-shadow: 3px 3px 5px rgba(0, 0, 0, .1);
+
   
  
-}
-
-.header-heading {
-    display: flex;
-    font: size 20px;
-    justify-content: left;
-    padding: 10px;
-    
-
-}
-.header-main-logo {
-    width: fit-content;
-    height: 100%;
-    background-color: var(--header-bg-clr);
-    display:flex ;
-    border-radius: 4%;
-}
 
 .header-main-logo img {
     width: 40px;
@@ -49,7 +24,6 @@
     border-radius: 50%;
     cursor: pointer;
     justify-content: center;
-    align-items: center;
 }
 .header-main-logo img:hover {
     transform: translate(3px, 3px)
@@ -147,7 +121,7 @@ transform: translate(30px 30px);
 }
 
 
-.index_body {
+.index_body, .login_body {
 
 min-height: 100vh;
 background-image: url("./Images/Sedona_view.JPG");
@@ -156,7 +130,7 @@ background-repeat: no-repeat;
 background-position: center;
 font-family: Georgia, 'Times New Roman', Times, serif;
 overflow: auto;
-display: flex;
+display: flexbox;
 }
 
 
@@ -230,7 +204,6 @@ z-index: 10;
     
 
 .gallery-body {
-    background-color: #fab45eb1;
 
 }
 
@@ -244,7 +217,7 @@ background-repeat: no-repeat;
 background-position: center;
 font-family: Georgia, 'Times New Roman', Times, serif;
 overflow: scroll;
-display: flex;
+display: flexbox;
 flex-grow: 1;
 flex-shrink: 1;
 flex-direction: column;
@@ -267,70 +240,16 @@ padding: 10px;
 
 
 
-    
-    
-}
-.about-text {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    margin-top: 300px;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    border-radius: 2.5%;
-    border: 2px 2px solid color(srgb rgb(0, 0, 0) rgb(0, 0, 0) blue)
-    
-}
-.about-text h2, h3, h4 {
-    font-size: 40px;
-    padding: 10px;
-    margin-top: 12px;
-    background-color: antiquewhite;
-    border-radius: 15%;
-    display: block;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: min-content;
-    margin: 10px;
-    border: 2px 2px solid color(srgb rgb(0, 0, 0) rgb(0, 0, 0) blue)
-}
-.about-text p {
-    border: solid;
-    border-radius: 10%;
-    background-color: antiquewhite;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex: 1 1 auto;
-    justify-content: space-evenly;
-
-}
-
 
 .contact-body {
-    display: inline-flex;
-    text-align: left;
-    flex-direction: column;
+    display: flexbox;
     background-color: antiquewhite;
     padding: 10px;
     margin:10px;
-    width: 100%;
 }
 
 .contact-container {
-    display: table-row;
-    text-align: left;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 150px;
-    padding: 12px;
-    border: 2px 2px 2px solid;
-    color: rgb(0, 4, 5);
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    border-radius: 2.5%;
+   
     
 }
 
